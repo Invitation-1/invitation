@@ -552,7 +552,7 @@ footer{
 
     <div class="gold-rule-h" style="margin-top:28px"></div>
     <div class="reveal reveal-delay-2">
-      <div class="tagline">Nikah · 11 July 2026 &nbsp;|&nbsp; Walima · 12 July 2026</div>
+      <div class="tagline">Walima · 12 July 2026</div>
     </div>
 
     <div class="scroll-hint" aria-hidden="true">
@@ -571,7 +571,7 @@ footer{
       <div class="inv-eyebrow">You are cordially invited</div>
       <p class="inv-text">
         Mr. &amp; Mrs. Syed Mohd. Akram request the honour of your presence<br/>
-        at the <strong>Nikah &amp; Walima</strong> of their beloved son<br/><br/>
+        at the <strong>Walima</strong> of their beloved son<br/><br/>
         <strong>Sayed Mohammed Fayez</strong><br/>
         <em style="font-size:0.9em;opacity:0.75;display:block;margin-top:4px">Grandson of late Mr. Syed Mohd. Ayyub<br/>and late Mr. Abdul Majeed</em><br/>
         &amp;<br/><br/>
@@ -612,24 +612,9 @@ footer{
     <div class="gold-rule-h"></div>
 
     <div class="events-grid">
-      <!-- NIKAH -->
-      <div class="reveal reveal-delay-1 event-card">
-        <div class="event-badge">Ceremony One</div>
-        <div class="event-name shimmer">Nikah</div>
-        <div class="event-date">Saturday · 11 July 2026</div>
-        <div class="event-time">11:30 AM Onwards</div>
-        <div class="gold-rule-h" style="width:80px"></div>
-        <div class="event-venue-name" style="margin-top:16px">St. Sebastian Centenary Auditorium</div>
-        <div class="event-venue-loc">Mallikatte, Mangalore</div>
-        <a class="map-btn" href="https://maps.app.goo.gl/vUjEpqsYAeqRpsF69?g_st=ic" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          View on Map
-        </a>
-      </div>
 
       <!-- WALIMA -->
       <div class="reveal reveal-delay-2 event-card">
-        <div class="event-badge">Ceremony Two</div>
         <div class="event-name shimmer">Walima</div>
         <div class="event-date">Sunday · 12 July 2026</div>
         <div class="event-time">01:00 PM Onwards</div>
@@ -644,7 +629,7 @@ footer{
     </div>
 
     <div style="margin-top:24px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--text-light);opacity:0.5;font-style:italic">
-      Followed by lunch at both events
+      Followed by lunch
     </div>
   </section>
 
@@ -655,22 +640,8 @@ footer{
     <div class="gold-rule-h"></div>
 
     <div class="reveal reveal-delay-1" style="width:100%;max-width:400px">
-      <div class="countdown-tabs">
-        <button class="countdown-tab active" onclick="switchCountdown('nikah',this)">Nikah</button>
-        <button class="countdown-tab" onclick="switchCountdown('walima',this)">Walima</button>
-      </div>
 
-      <div class="countdown-display active" id="cd-nikah">
-        <div class="cd-unit"><div class="cd-num" id="n-days">00</div><div class="cd-label">Days</div></div>
-        <div class="cd-sep">:</div>
-        <div class="cd-unit"><div class="cd-num" id="n-hours">00</div><div class="cd-label">Hours</div></div>
-        <div class="cd-sep">:</div>
-        <div class="cd-unit"><div class="cd-num" id="n-mins">00</div><div class="cd-label">Mins</div></div>
-        <div class="cd-sep">:</div>
-        <div class="cd-unit"><div class="cd-num" id="n-secs">00</div><div class="cd-label">Secs</div></div>
-      </div>
-
-      <div class="countdown-display" id="cd-walima">
+      <div class="countdown-display active" id="cd-walima">
         <div class="cd-unit"><div class="cd-num" id="w-days">00</div><div class="cd-label">Days</div></div>
         <div class="cd-sep">:</div>
         <div class="cd-unit"><div class="cd-num" id="w-hours">00</div><div class="cd-label">Hours</div></div>
@@ -720,7 +691,7 @@ footer{
     <div class="reveal reveal-delay-2 footer-names">Fayez &amp; Afra</div>
     <div class="gold-rule-h" style="margin-top:24px"></div>
     <div style="font-size:11px;letter-spacing:2px;opacity:0.3;color:var(--text-light);margin-top:16px">
-      11 · 12 JULY 2026 · MANGALORE
+      12 JULY 2026 · MANGALORE
     </div>
   </footer>
 
@@ -737,11 +708,8 @@ footer{
 const CONFIG = {
   groom: "Sayed Mohammed Fayez",
   bride: "Afra Ashfaq",
-  nikahDate: new Date("2026-07-11T11:30:00+05:30"),
   walimaDate: new Date("2026-07-12T13:00:00+05:30"),
-  nikahVenue: "St. Sebastian Centenary Auditorium, Mallikatte, Mangalore",
   walimaVenue: "Rayyan Auditorium, Permude, Mangalore",
-  nikahMap: "https://maps.app.goo.gl/vUjEpqsYAeqRpsF69?g_st=ic",
   walimaMap: "https://maps.app.goo.gl/uSECWPWZJgZdcf5D7?g_st=ic",
   musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 };
@@ -780,7 +748,6 @@ const io = new IntersectionObserver(entries=>{
 revealEls.forEach(el=>io.observe(el));
 
 // ─── COUNTDOWN ───
-let activeCountdown = 'nikah';
 function switchCountdown(which, btn){
   activeCountdown = which;
   document.querySelectorAll('.countdown-tab').forEach(t=>t.classList.remove('active'));
@@ -790,37 +757,41 @@ function switchCountdown(which, btn){
 }
 function updateCountdown(){
   const now = new Date();
-  ['nikah','walima'].forEach(which=>{
-    const target = which==='nikah' ? CONFIG.nikahDate : CONFIG.walimaDate;
-    const diff = target - now;
-    const pfx = which==='nikah' ? 'n' : 'w';
-    if(diff<=0){
-      ['days','hours','mins','secs'].forEach(u=>{ document.getElementById(`${pfx}-${u}`).textContent='00'; });
-      return;
-    }
-    const days = Math.floor(diff/86400000);
-    const hours = Math.floor((diff%86400000)/3600000);
-    const mins = Math.floor((diff%3600000)/60000);
-    const secs = Math.floor((diff%60000)/1000);
-    document.getElementById(`${pfx}-days`).textContent=String(days).padStart(2,'0');
-    document.getElementById(`${pfx}-hours`).textContent=String(hours).padStart(2,'0');
-    document.getElementById(`${pfx}-mins`).textContent=String(mins).padStart(2,'0');
-    document.getElementById(`${pfx}-secs`).textContent=String(secs).padStart(2,'0');
-  });
+  const target = CONFIG.walimaDate;
+  const diff = target - now;
+
+  if(diff <= 0){
+    document.getElementById('w-days').textContent = '00';
+    document.getElementById('w-hours').textContent = '00';
+    document.getElementById('w-mins').textContent = '00';
+    document.getElementById('w-secs').textContent = '00';
+    return;
+  }
+
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const mins = Math.floor((diff % 3600000) / 60000);
+  const secs = Math.floor((diff % 60000) / 1000);
+
+  document.getElementById('w-days').textContent = String(days).padStart(2,'0');
+  document.getElementById('w-hours').textContent = String(hours).padStart(2,'0');
+  document.getElementById('w-mins').textContent = String(mins).padStart(2,'0');
+  document.getElementById('w-secs').textContent = String(secs).padStart(2,'0');
 }
+
 updateCountdown();
-setInterval(updateCountdown,1000);
+setInterval(updateCountdown, 1000);
 
 // ─── MUSIC ───
 const audio = new Audio();
 audio.loop = true;
-audio.volume = 0.05;
+audio.volume = 0.10;
 // Gentle Islamic nasheed / oud instrumental via public domain sources
 // Soft oud/ambient music - free public domain
   // You can replace this URL with any .mp3 link
   const musicSources = [
-  './audio.mp3'
-];
+    './audio.mp3'
+  ];
   audio.src = musicSources[0];
   audio.onerror = () => { audio.src = musicSources[1]; };
 const musicBtn = document.getElementById('music-btn');
