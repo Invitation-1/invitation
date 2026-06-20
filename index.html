@@ -814,12 +814,12 @@ setInterval(updateCountdown,1000);
 // ─── MUSIC ───
 const audio = new Audio();
 audio.loop = true;
-audio.volume = 0.1;
+audio.volume = 0.05;
 // Gentle Islamic nasheed / oud instrumental via public domain sources
 // Soft oud/ambient music - free public domain
   // You can replace this URL with any .mp3 link
   const musicSources = [
-  './oud.mp3'
+  './audio.mp3'
 ];
   audio.src = musicSources[0];
   audio.onerror = () => { audio.src = musicSources[1]; };
