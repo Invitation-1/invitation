@@ -814,14 +814,13 @@ setInterval(updateCountdown,1000);
 // ─── MUSIC ───
 const audio = new Audio();
 audio.loop = true;
-audio.volume = 0.35;
+audio.volume = 0.1;
 // Gentle Islamic nasheed / oud instrumental via public domain sources
 // Soft oud/ambient music - free public domain
   // You can replace this URL with any .mp3 link
   const musicSources = [
-    'https://www.bensound.com/bensound-music/bensound-romantic.mp3',
-    'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'
-  ];
+  './oud.mp3'
+];
   audio.src = musicSources[0];
   audio.onerror = () => { audio.src = musicSources[1]; };
 const musicBtn = document.getElementById('music-btn');
